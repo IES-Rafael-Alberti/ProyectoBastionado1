@@ -14,10 +14,6 @@ En este documento veremos un caso real donde veremos como securizar la BIOS/UEFI
 
 ## Introducción
 
-<p align="center">
-  <img width="300" height="200" src="https://spanning.com/wp-content/uploads/2020/05/more-secure-icon-300x200.png">
-</p>
-
   Primero debemos saber que es una BIOS, esto es un software que se ejecuta en el inicio del arranque del equipo y que inicia y verifica todos los dispositivos que tiene nuestro equipo. Podemos diferenciar entre BIOS UEFI y Legacy, nosotros para este documento utilizaremos una bios UEFI.
   
 ## Contraseñas en BIOS
@@ -28,15 +24,15 @@ Dentro de la BIOS podemos encontrar dos tipos de contraseñas, la de usuario la 
 
 La primera que configuraremos sera la de usuario ya que es la mas prohibitiba ya que nos pedira la contraseña tanto al iniciar el equipo como al querer acceder a la bios.
 
-Insertar imagen 2
+![imagen2](img/imgbios2.jpg)
 
 Accedemos al menu que hemos visto el cual se encuentra en las opciones avanzadas/security y configuramos la contraseña, minimo tendra que tener 3 caracteres y maximo 20, estos valores no son modificable.
 
-insertar imagen 3
+![imagen3](img/imgbios3.jpg)
 
 una vez configurada la siguiente vez que iniciemos el equipo se nos mostrara el siguiente cuadro pidiendo la contraseña.
 
-insertar imagen 9
+![imagen9](img/imgbios9.jpg)
 
 ### Contraseña de administrador
 
@@ -44,7 +40,7 @@ Si queremos que el usuario tenga que ingresar la contraseña para iniciar el equ
 
 Volvemos al mismo menu que vimos anteriormente y esta vez configuramos la contraseña de administrador deberia de quedarnos tal como vemos a continuación.
 
-insertar imagen 4
+![imagen4](img/imgbios9.jpg)
 
 Cuando queramos acceder a la configuración de BIOS nos saldra de nuevo el cuadro de texto solicitando la contraseña de administrador en vez de la de usuario.
 
@@ -54,7 +50,7 @@ Para prohibir los arranques externos podemos utilizar la funcion que trae la pla
 
 Para entender un poco mas esto se encarga de bloquear la información donde tiene localizado el sector de arranque del disco fisico por lo que impedira que arranque, cabe destacar que esta funcion se apoya en el secure boot y fast boost por loq ue teniendo ambas desactivadas esta opción no funcionara.
 
-insertar imagen 1
+![imagen1](img/imgbios1.jpg)
 
 ## Orden de Arranque
 
@@ -62,7 +58,7 @@ Una de las cosas que debemos de configurar lo mejor que podamos es el orden de a
 
 Para solucionar esto debemos de confirmar que tenemos en el orden de arranque en primer lugar el disco duro interno, ademas para facilitarnos esta labor podemos eliminar la información de boot dejando solo el dispositivo con el que queremos bootear.
 
-insertar imagen 5
+![imagen5](img/imgbios5.jpg)
 
 ## Otras opciones de seguridad
 
@@ -72,7 +68,7 @@ Aparte de las opciones que hemos vistos podemos tomar otras medidas de seguridad
 
 Un ataque que podemos evitar es que nos enciendan el ordenador a traves de la WAN evitando posibles ataques a nuestro equipo para ello podemos desactivar esta opción, podemos dejar habilitado power on LAN en caso de que en la bios vengan por separado.
 
-insertar imagen 8
+![imagen8](img/imgbios8.jpg)
 
 ### Encriptación TPM
 
@@ -80,5 +76,5 @@ En los ultimos modelos de placa base tenemos un nuevo chip conocido como TPM o m
 
 Como extra algunas BIOS nos permiten configurar el tipo de encriptación pudiendo pasar de SHA-1 a SHA-256 y adaptar este a su version TPM2
 
-insertar imagen 7
+![imagen7](img/imgbios7.jpg)
 

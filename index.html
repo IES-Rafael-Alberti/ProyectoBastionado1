@@ -28,39 +28,54 @@
                   feedback-link="Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git)">
     
       <google-codelab-step label="Introducción" duration="0">
-        <p>   Primero debemos saber que es una BIOS, esto es un software que se ejecuta en el inicio del arranque del equipo y que inicia y verifica todos los dispositivos que tiene nuestro equipo. Podemos diferenciar entre BIOS UEFI y Legacy, nosotros para este documento utilizaremos una bios UEFI.    </p>
+        <p>Primero debemos saber que es una BIOS, esto es un software que se ejecuta en el inicio del arranque del equipo y que inicia y verifica todos los dispositivos que tiene nuestro equipo. Podemos diferenciar entre BIOS UEFI y Legacy, nosotros para este documento utilizaremos una bios UEFI.</p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Contraseñas en BIOS" duration="0">
-        <p> Dentro de la BIOS podemos encontrar dos tipos de contraseñas, la de usuario la cual se nos pedira cuando iniciemos el equipo antes de que cargue el SO y la de administrador la cual nos pediran para acceder a la configuración de esta.  </p>
-<h2 is-upgraded>Contraseña de usuario </h2>
-<p> La primera que configuraremos sera la de usuario ya que es la mas prohibitiba ya que nos pedira la contraseña tanto al iniciar el equipo como al querer acceder a la bios.  Insertar imagen 2  Accedemos al menu que hemos visto el cual se encuentra en las opciones avanzadas/security y configuramos la contraseña, minimo tendra que tener 3 caracteres y maximo 20, estos valores no son modificable.  insertar imagen 3  una vez configurada la siguiente vez que iniciemos el equipo se nos mostrara el siguiente cuadro pidiendo la contraseña.  insertar imagen 9  </p>
-<h2 is-upgraded>Contraseña de administrador </h2>
-<p> Si queremos que el usuario tenga que ingresar la contraseña para iniciar el equiop pero que no pueda acceder a la configuracion de bios podemos configurar una contraseña extra de administrador para que pida esta cuando quiera acceder a la bios.  Volvemos al mismo menu que vimos anteriormente y esta vez configuramos la contraseña de administrador deberia de quedarnos tal como vemos a continuación.  insertar imagen 4  Cuando queramos acceder a la configuración de BIOS nos saldra de nuevo el cuadro de texto solicitando la contraseña de administrador en vez de la de usuario.  </p>
+        <p>Dentro de la BIOS podemos encontrar dos tipos de contraseñas, la de usuario la cual se nos pedira cuando iniciemos el equipo antes de que cargue el SO y la de administrador la cual nos pediran para acceder a la configuración de esta.</p>
+<h2 is-upgraded>Contraseña de usuario</h2>
+<p>La primera que configuraremos sera la de usuario ya que es la mas prohibitiba ya que nos pedira la contraseña tanto al iniciar el equipo como al querer acceder a la bios.</p>
+<p class="image-container"><img alt="imagen2" src="img/41afec0b0f5bf4d.jpg"></p>
+<p>Accedemos al menu que hemos visto el cual se encuentra en las opciones avanzadas/security y configuramos la contraseña, minimo tendra que tener 3 caracteres y maximo 20, estos valores no son modificable.</p>
+<p class="image-container"><img alt="imagen3" src="img/f2829c4c239df32d.jpg"></p>
+<p>una vez configurada la siguiente vez que iniciemos el equipo se nos mostrara el siguiente cuadro pidiendo la contraseña.</p>
+<p class="image-container"><img alt="imagen9" src="img/dc546823f9072849.jpg"></p>
+<h2 is-upgraded>Contraseña de administrador</h2>
+<p>Si queremos que el usuario tenga que ingresar la contraseña para iniciar el equiop pero que no pueda acceder a la configuracion de bios podemos configurar una contraseña extra de administrador para que pida esta cuando quiera acceder a la bios.</p>
+<p>Volvemos al mismo menu que vimos anteriormente y esta vez configuramos la contraseña de administrador deberia de quedarnos tal como vemos a continuación.</p>
+<p class="image-container"><img alt="imagen4" src="img/dc546823f9072849.jpg"></p>
+<p>Cuando queramos acceder a la configuración de BIOS nos saldra de nuevo el cuadro de texto solicitando la contraseña de administrador en vez de la de usuario.</p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Arranque externos" duration="0">
-        <p> Para prohibir los arranques externos podemos utilizar la funcion que trae la placa base de capturar el &#34;interrupt 19&#34;  Para entender un poco mas esto se encarga de bloquear la información donde tiene localizado el sector de arranque del disco fisico por lo que impedira que arranque, cabe destacar que esta funcion se apoya en el secure boot y fast boost por loq ue teniendo ambas desactivadas esta opción no funcionara.  insertar imagen 1  </p>
+        <p>Para prohibir los arranques externos podemos utilizar la funcion que trae la placa base de capturar el &#34;interrupt 19&#34;</p>
+<p>Para entender un poco mas esto se encarga de bloquear la información donde tiene localizado el sector de arranque del disco fisico por lo que impedira que arranque, cabe destacar que esta funcion se apoya en el secure boot y fast boost por loq ue teniendo ambas desactivadas esta opción no funcionara.</p>
+<p class="image-container"><img alt="imagen1" src="img/a505418cbb3809f5.jpg"></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Orden de Arranque" duration="0">
-        <p> Una de las cosas que debemos de configurar lo mejor que podamos es el orden de arranque en BIOS debido a que cuando queremos configurar un equipo de 0 podemos cambiar este valor poniendo por ejemplo el pendrive de instalación el primero en el orden de arranque teniendo preferencia sobre el disco duro.  Para solucionar esto debemos de confirmar que tenemos en el orden de arranque en primer lugar el disco duro interno, ademas para facilitarnos esta labor podemos eliminar la información de boot dejando solo el dispositivo con el que queremos bootear.  insertar imagen 5  </p>
+        <p>Una de las cosas que debemos de configurar lo mejor que podamos es el orden de arranque en BIOS debido a que cuando queremos configurar un equipo de 0 podemos cambiar este valor poniendo por ejemplo el pendrive de instalación el primero en el orden de arranque teniendo preferencia sobre el disco duro.</p>
+<p>Para solucionar esto debemos de confirmar que tenemos en el orden de arranque en primer lugar el disco duro interno, ademas para facilitarnos esta labor podemos eliminar la información de boot dejando solo el dispositivo con el que queremos bootear.</p>
+<p class="image-container"><img alt="imagen5" src="img/7d0e552487f51407.jpg"></p>
 
 
       </google-codelab-step>
     
       <google-codelab-step label="Otras opciones de seguridad" duration="0">
-        <p> Aparte de las opciones que hemos vistos podemos tomar otras medidas de seguridad para evitar posibles ataques a nuestro equipo.  </p>
-<h2 is-upgraded>Eliminar power on PCI-E </h2>
-<p> Un ataque que podemos evitar es que nos enciendan el ordenador a traves de la WAN evitando posibles ataques a nuestro equipo para ello podemos desactivar esta opción, podemos dejar habilitado power on LAN en caso de que en la bios vengan por separado.  insertar imagen 8  </p>
-<h2 is-upgraded>Encriptación TPM </h2>
-<p> En los ultimos modelos de placa base tenemos un nuevo chip conocido como TPM o modulo de de plataforma de confianza. Este chip se encarga de proteger las claves de cifrado de Windows aunque algunas distribuciones Linux tambien empiezan a usarlo.  Como extra algunas BIOS nos permiten configurar el tipo de encriptación pudiendo pasar de SHA-1 a SHA-256 y adaptar este a su version TPM2  insertar imagen 7  </p>
+        <p>Aparte de las opciones que hemos vistos podemos tomar otras medidas de seguridad para evitar posibles ataques a nuestro equipo.</p>
+<h2 is-upgraded>Eliminar power on PCI-E</h2>
+<p>Un ataque que podemos evitar es que nos enciendan el ordenador a traves de la WAN evitando posibles ataques a nuestro equipo para ello podemos desactivar esta opción, podemos dejar habilitado power on LAN en caso de que en la bios vengan por separado.</p>
+<p class="image-container"><img alt="imagen8" src="img/48ce9ebd20c569ca.jpg"></p>
+<h2 is-upgraded>Encriptación TPM</h2>
+<p>En los ultimos modelos de placa base tenemos un nuevo chip conocido como TPM o modulo de de plataforma de confianza. Este chip se encarga de proteger las claves de cifrado de Windows aunque algunas distribuciones Linux tambien empiezan a usarlo.</p>
+<p>Como extra algunas BIOS nos permiten configurar el tipo de encriptación pudiendo pasar de SHA-1 a SHA-256 y adaptar este a su version TPM2</p>
+<p class="image-container"><img alt="imagen7" src="img/28e01a177df6be6a.jpg"></p>
 
 
       </google-codelab-step>
