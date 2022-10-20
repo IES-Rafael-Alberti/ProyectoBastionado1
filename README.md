@@ -10,7 +10,7 @@ analytics account: ID de Google Analytics
 # Protección de la BIOS/UEFI
 
 
-En este documento veremos un caso real donde veremos como securizar la BIOS/UEFI para evitar accesos no deseados en esta.q
+En este documento veremos un caso real donde veremos como securizar la BIOS/UEFI para evitar accesos no deseados en esta.
 
 ## Introducción
 
@@ -40,7 +40,7 @@ Si queremos que el usuario tenga que ingresar la contraseña para iniciar el equ
 
 Volvemos al mismo menu que vimos anteriormente y esta vez configuramos la contraseña de administrador deberia de quedarnos tal como vemos a continuación.
 
-![imagen4](img/imgbios9.jpg)
+![imagen4](img/imgbios4.jpg)
 
 Cuando queramos acceder a la configuración de BIOS nos saldra de nuevo el cuadro de texto solicitando la contraseña de administrador en vez de la de usuario.
 
