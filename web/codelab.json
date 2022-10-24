@@ -1,0 +1,24 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2022-10-24T13:37:10+02:00",
+  "id": "web",
+  "duration": 0,
+  "title": "Protección de la BIOS/UEFI",
+  "summary": "Resumen del CodeLab",
+  "source": "README.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "codelab",
+    "markdown"
+  ],
+  "tags": [
+    "web"
+  ],
+  "url": "web"
+}

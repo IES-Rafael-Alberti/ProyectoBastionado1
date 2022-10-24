@@ -1,11 +1,9 @@
 author: Pablo Crespo Cervantes
 summary: Resumen del CodeLab 
-id: identificador-unico-del-codelab 
+id: web 
 categories: codelab,markdown 
 environments: Web 
 status: Published 
-feedback link: Un enlace en el que los usuarios puedan darte feedback (quizás creando un issue en un repositorio de git) 
-analytics account: ID de Google Analytics
 
 # Protección de la BIOS/UEFI
 
